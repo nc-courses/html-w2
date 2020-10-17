@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* selector {
+            property-name: value-of-the-property;
+        }     */
+
+      h1 {
+        /* display: inline; */
+        color: red;
+        background-color: bisque;
+        padding: 50px;
+        border: solid red 2px;
+        /* border-style: solid;
+        border-color: red;
+        border-width: 2px; */
+        margin-bottom: 200px;
+      }
+
+      h2 {
+        color: blue;
+      }
+
+      span {
+        margin-top: 300px;
+        margin-bottom: 100px;
+
+        margin-right: 200px;
+        margin-left: 50px;
+        /* margin: 300px 200px 100px 50px; */
+      }
+
+      p {
+        color: red;
+      }
+
+      .p-class {
+        color: blue;
+      }
+
+      #p-id {
+        color: magenta;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="p-id" class="p-class">asldjflaskdjflkasdjkl</p>
+    <span>shorthand properties</span>
+    <!-- h1 and h2 were styled with internal styles this means I used the style tag -->
+    <h1>heading 1</h1>
+    <h2>heading 2</h2>
+
+    <!-- h3 was styled with inline styles this means I used the style attribute -->
+    <h3 style="color: green">heading 3</h3>
+
+    <!-- h4, h5, h6 were styled with external style sheet this mean I created a new file for my css -->
+    <h4>heading 4</h4>
+    <h4 class="malcolm">heading 4</h4>
+    <h4 id="unique">heading 4</h4>
+    <h4 class="malcolm">heading 4</h4>
+    <h5>heading 5</h5>
+    <h6>heading 6</h6>
+  </body>
+</html>
