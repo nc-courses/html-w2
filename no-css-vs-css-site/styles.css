@@ -1,0 +1,245 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color:#e4f9f5;
+  background-color: #eeeeee;
+}
+
+h2 {
+  color: #40514e;
+}
+
+hr {
+  border: none;
+  border-top: 8px dotted #40514e;
+  border-top: 8px dotted #87aea7;
+  height: 1px;
+  width:  70px;
+  padding: 0 auto;
+}
+
+/*************** Navbar ***************/
+.navbar-cus{
+  /* background-color: #cbf1f5; */
+  padding: 4vw 5vw;
+  position: absolute;
+  width: 100vw;
+}
+
+.logo {
+  border-radius: 50%;
+  height: 70px;
+  margin: 0 0 0 2vw;
+  width: 70px;
+}
+
+/* remove outline once you click the burger menu button   */
+.navbar-btn:focus {
+  outline: none; 
+}
+
+.navbar-links{
+  color: #e4f9f5 !important;
+  font-size: 120%;
+  margin: 0 2vw;
+  text-align: center;
+}
+
+.navbar-links:hover{
+  color: #40514e !important;
+}
+
+/*************** Header ***************/
+.header{
+  background: linear-gradient(135deg, #11999e 10%, #11999e 10%, #30e3ca 100%);
+  padding: 13vw 5vw 0 5vw;
+}
+
+.name{
+  color: #0a5659;
+  padding: 2em 0 0 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+.header-img{
+  padding: 0 2vw;
+  width: 100%;
+}
+
+/*************** About ***************/
+#about {
+  background-color: #eeeeee;
+  /* background-color: #e4f9f5; */
+  /* background-color: white; */
+}
+
+.about-box {
+  text-align: center;
+  padding: 5% 0;
+}
+
+/* On screens that are 416px or more */
+@media screen and (min-width: 416px) {
+  .about-img {
+    border-radius: 50%;
+    border: 4px solid white;
+    height: 20%;
+    margin: 0 0 20px 0;
+    width: 20%;
+  }
+}
+
+/* On screens that are 415px or less */
+@media screen and (max-width: 415px) {
+  .about-img {
+    border-radius: 50%;
+    border: 4px solid white;
+    height: 50%;
+    margin: 0 0 20px 0;
+    width: 50%;
+  }
+}
+
+.about-title {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 416px){
+  .about-des {
+    font-size: 18px;
+    padding: 0 30%;
+    color: gray
+  }
+}
+
+@media screen and (max-width: 416px){
+  .about-des {
+    font-size: 18px;
+    padding: 0 10%;
+    color: gray
+  }
+}
+
+/*************** Skills ***************/
+#skills {
+  background-color: #30e3ca;
+  background-color: #eeeeee;
+  /* background-color: #e4f9f5; */
+  padding: 5% 5% 2% 5%;
+  text-align: center;
+}
+
+.skills-box {
+  text-align: center;
+  padding: 4% 2%;
+}
+
+.skills-icon {
+  color: #11999e;
+  margin: 0 0 20px 0;
+}
+
+.skills-img {
+  color: #11999e;
+  height: 210px;
+  /* margin: 0 0 20px 0; */
+  width: 250px;
+}
+
+.skills-title {
+  margin: 28px 0;
+  font-weight: bold;
+}
+
+.skills-des {
+  font-size: 18px;
+  padding: 0 10%;
+  color: gray;
+  text-align: justify;
+}
+
+
+/*************** Projects ***************/
+#projects {
+  /* display: flex;
+  flex-wrap: wrap; */
+  padding: 5% 5% 2% 5%;
+  text-align: center;
+}
+
+.project-box {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 4.5%; */
+}
+
+.project-img {
+  color: #11999e;
+  height: 210px;
+  /* margin: 0 0 20px 0; */
+  width: 20vw;
+  flex: 1;
+}
+
+.project-desc {
+  text-align: justify;
+  /* justify-content: center; */
+  padding: 4.5%;
+  flex: 2;
+  letter-spacing: .05rem;
+  line-height: 1.5rem;
+  color: gray
+  /* width: 50vw; */
+}
+
+.gladiator-logo {
+  background-color: #11999e;
+  border-radius: 50%;
+  width: 150px;
+}
+
+
+
+/*************** Footer ***************/
+#contact {
+  background-color: #11999e;
+  background-color: #40514e;
+  height: 20vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 30vw
+}
+
+.contact-icon {
+  color: #40514e;
+  color: #11999e;
+  color: #30e3ca;
+}
+
+/*************** Parallax ***************/
+.parallax {
+  /* background shorthand - https://www.w3schools.com/cssref/css3_pr_background.asp */
+  background: linear-gradient( #11999e6e, #11999e6e ), url('./images/undraw_coding_6mjf.svg') center no-repeat fixed;
+  height: 80vh;
+  text-align: center;
+}
+.parallax2 {
+  /* background shorthand - https://www.w3schools.com/cssref/css3_pr_background.asp */
+  background: linear-gradient( #11999e6e, #11999e6e ), url('./images/undraw_Designer_by46.svg') center no-repeat fixed;
+  height: 80vh;
+  text-align: center;
+}
+.parallax3 {
+  /* background shorthand - https://www.w3schools.com/cssref/css3_pr_background.asp */
+  background: linear-gradient( #11999e6e, #11999e6e ), url('./images/undraw_programming_2svr.svg') center no-repeat fixed;
+  height: 80vh;
+  text-align: center;
+}
