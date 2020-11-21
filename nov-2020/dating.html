@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Enter Your Details for Our Dating Website</h1>
+    <form
+      action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <!-- Fieldset 1 -->
+      <fieldset>
+        <legend>Your Face</legend>
+        <div>
+          <label for="avatar">Upload your image:</label>
+          <input type="file" name="avatar" id="avatar" required />
+        </div>
+        Image preview:
+        <img src="" id="preview" width="500" alt="your avatar pic" />
+      </fieldset>
+
+      <!-- Fieldset 2 -->
+      <fieldset>
+        <legend>Your Details</legend>
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your full name"
+            required
+          />
+        </div>
+        <div>
+          <label>Gender:</label>
+          <input type="radio" name="gender" id="woman" />
+          <label for="woman">Woman</label>
+          <input type="radio" name="gender" id="man" />
+          <label for="man">Man</label>
+        </div>
+        <div>
+          <label for="age">Age:</label>
+          <input type="number" name="age" id="age" min="18" />
+        </div>
+        <div>
+          <label for="dob">Date of Birth:</label>
+          <input type="date" name="dob" id="dob" />
+        </div>
+        <div>
+          <label for="color">Favorite color:</label>
+          <input type="color" name="color" id="color" />
+        </div>
+        <div>
+          <label for="country">Country:</label>
+          <select name="country" id="country">
+            <option value="">Choose a country</option>
+            <option value="colombia">Colombia</option>
+            <option value="argentina">Argentina</option>
+          </select>
+        </div>
+        <div>
+          <label for="salary">Salary:</label>
+          <span class="range-caption">Middleclass</span>
+          <input type="range" name="salary" id="salary" />
+          <span class="range-caption">Upperclass</span>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
