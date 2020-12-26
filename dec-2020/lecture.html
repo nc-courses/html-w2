@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Internal CSS uses the style tag -->
+    <!-- IMPORTANT: style tag always goes inside of the head tag -->
+    <style>
+      /* CSS Syntax: selector & curly braces, declaration(s) (syntax of declaration==> property-name: value;) */
+      h1 {
+        color: yellow;
+        /* display: inline; */
+      }
+
+      body {
+        background-color: red;
+        border: solid blue 4px;
+      }
+
+      fieldset {
+        background-color: cornflowerblue;
+      }
+
+      tr {
+        background-color: pink;
+      }
+
+      #title2 {
+        color: firebrick !important;
+      }
+
+      /* syntax for class selector: .class-name  */
+      /* classes can be reused */
+      .form-title {
+        color: lightcyan;
+      }
+
+      /* syntax for id selector: #id-name  */
+      /* id's will only appear once in your whole document */
+      #site-title {
+        color: #40713c;
+        /* margin-top: 100px;
+        margin-right: 200px;
+        margin-bottom: 300px;
+        margin-left: 400px; */
+        margin: 100px 200px 300px 400px;
+
+        /* border-style: solid;
+        border-color: pink;
+        border-width: 5px; */
+        border: solid pink 5px;
+
+        /* padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px; */
+        /* padding: 10px 20px 30px 40px; */
+        padding: 10px 20px;
+
+        background-repeat: no-repeat;
+      }
+    </style>
+
+    <!-- 3 ways to add CSS -->
+    <!-- Internal stylesheet uses style tag -->
+
+    <!-- External stylesheet: create another file named blah.css, create link tag INSIDE the head tag of your HTML file -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Inline styles add the style attribute to any element you want to add inline styles -->
+
+    <!-- Priority: inline styles > internal styles > external styles -->
+
+    <!-- Selectors: tag, class, id  -->
+
+    <!-- Box Model -->
+
+    <!-- Margin -->
+
+    <!-- Padding -->
+
+    <!-- Border: sidth, style, color -->
+
+    <!-- Font: size, style, weight, family, etc... -->
+
+    <!-- Bacground: color, image, repeat, size, etc... -->
+
+    <!-- Display: inline, block, inline-block -->
+
+    <!-- Color Values: name, hex, RBG, etc... -->
+
+    <!-- Specificity -->
+    <!-- inline styles > internal styles > external styles > user agent -->
+    <!-- id > class & advance selectors > tag -->
+
+    <!-- Inheritance -->
+    <!-- Nested (i.e. child) elements will inherit css from the parents -->
+
+    <!-- !important -->
+
+    <style>
+      th,
+      td {
+        border: red 3px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="site-title">Best Taco Recipes</h1>
+
+    <h1 id="title2" style="color: blue; background-color: greenyellow">
+      Tables
+    </h1>
+    <!-- Tables: table, thead, tbody, th, tr, td  -->
+    <!-- Attributes: colspan, rowspan -->
+    <table>
+      <thead>
+        <!-- Row 1 -->
+        <tr>
+          <th>Col 1</th>
+          <th>Col 2</th>
+          <th>Col 3</th>
+          <th>Col 4</th>
+        </tr>
+      </thead>
+      <tbody class="form-title">
+        <!-- Row 2 -->
+        <tr class="form-title">
+          <td colspan="2">C1 R2</td>
+          <td rowspan="3">C2 R2</td>
+          <td>C3 R2</td>
+          <td>C4 R2</td>
+        </tr>
+        <!-- Row 3 -->
+        <tr class="form-title">
+          <td>C1 R3</td>
+          <td>C2 R3</td>
+          <td>C3 R3</td>
+          <td>C4 R3</td>
+        </tr>
+        <tr>
+          <td>C1 R4</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+
+    <!-- Forms: form (action, method, enctype), input (name, id, type = text, submit, file, radio, checkbox, email, month, color, etc...), fieldset & legend, textarea, select & option, label (for) -->
+    <h1 class="form-title">Forms</h1>
+    <form action="url" method="POST">
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+        <br />
+        <input type="number" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Family Info</legend>
+        <input type="file" />
+        <br />
+        <input type="color" />
+      </fieldset>
+      <textarea></textarea>
+      <br />
+      <select>
+        <option value="usa">USA</option>
+        <option value="brazil">Brazil</option>
+        <option value="colombia">Colombia</option>
+        <option value="aruba">Aruba</option>
+      </select>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
